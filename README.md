@@ -87,40 +87,40 @@
   
   ------ Consultas <br>
   
-  -------- Estoque
-  ---------- index.php
+  -------- Estoque <br>
+  ---------- index.php <br>
   
-  -------- Fornecedores
-  ---------- index.php
+  -------- Fornecedores <br>
+  ---------- index.php <br>
   
-  -------- Frota
-  ---------- index.php
+  -------- Frota <br>
+  ---------- index.php <br>
   
-  -------- Manutencoes
-  ---------- index.php
+  -------- Manutencoes <br>
+  ---------- index.php <br>
   
-  -------- Movimentacoes
-  ---------- entradas.php
-  ---------- index.html
-  ---------- saidas.php
+  -------- Movimentacoes <br>
+  ---------- entradas.php <br>
+  ---------- index.html <br>
+  ---------- saidas.php <br>
   
-  -------- Notas
-  ---------- index.php
+  -------- Notas <br>
+  ---------- index.php <br>
   
-  -------- Produtos
-  ---------- index.php
+  -------- Produtos <br>
+  ---------- index.php <br>
   
   ------ Dashboard <br>
-  -------- index.php
+  -------- index.php <br>
   
   ------ Templates <br>
-  -------- footer.php
-  -------- header.php
-  -------- index.html
-  -------- loader.php
-  -------- menu.php
-  -------- notify.php
-  -------- rodape.php
+  -------- footer.php <br>
+  -------- header.php <br>
+  -------- index.html <br>
+  -------- loader.php <br>
+  -------- menu.php <br>
+  -------- notify.php <br>
+  -------- rodape.php <br>
   
   ------ User <br>
   ------ in_work.php <br>
