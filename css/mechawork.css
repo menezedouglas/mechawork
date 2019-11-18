@@ -1,0 +1,1566 @@
+@import '../fonts/fonts.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: all .1s;
+  font-family: 'Roboto Regular' !important;
+
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.text-mechawork: {
+color: #074787;
+}
+
+.bg-mechawork {
+  background-color: #074787;
+}
+
+#form-cadMan_Interna
+{ display: block; }
+
+#form-cadMan_Externa
+{ display: none; }
+
+#tbl_consultaProdutoModal tbody tr,
+#tbl_consultaFrota tbody tr
+{ cursor: pointer; }
+
+#tbl_consultaProdutoModal tbody tr:hover,
+#tbl_consultaFrota tbody tr:hover
+{ background-color: #074787; color: #fff; }
+
+#tbl_consultaProdutoModal .linha-selecionada,
+#tbl_consultaFrota .linha-selecionada
+{ background-color: #33aa33; color: #fff; }
+
+
+@media print {
+
+  #btn_relvoltar { display: none; }
+
+}
+
+::-webkit-scrollbar              { width: 4px;}
+::-webkit-scrollbar-button       { display: none; }
+::-webkit-scrollbar-track        { background-color: #fff;}
+::-webkit-scrollbar-track-piece  { background-color: transparent;}
+::-webkit-scrollbar-thumb        { background-color: #074787; border-radius: 2px;}
+::-webkit-scrollbar-corner       { display: none; }
+::-webkit-resizer                { display: none; }
+
+@media only screen and (min-width: 0px) {
+
+    * {
+        font-size: 10pt;
+    }
+
+    #loader
+    {
+      position: absolute;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      z-index: 1000;
+      background-color: #074787;
+      display: block;
+    }
+
+    #loader img
+    {
+      margin-top: 5%;
+      width: 28%;
+    }
+
+    #loader h4
+    {
+      margin-top: 5%;
+      color: #fff;
+    }
+
+    #conteudo div .card, #conteudo .card { padding: 1%; }
+
+    #btn-searchprod svg
+    {
+      width: 10px;
+      height: 20px;
+    }
+
+    .banner {
+        background-color: #074787;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    #logo_login {
+        position: absolute;
+        width: 40%;
+        top: 25%;
+        margin-left: 17%;
+        display: none;
+    }
+
+    .login_home .login_form {
+        font-family: 'Roboto Thin';
+        position: absolute;
+        box-sizing: border-box;
+        width: 25%;
+        height: 100%;
+        background: #fff;
+        margin-left: 75%;
+    }
+
+    .login_home .login_form h4 {
+        font-family: 'Roboto Regular';
+        margin-top: 30%;
+    }
+
+    #form-login
+    {
+      margin-top: 15%;
+    }
+
+    #form-login .footer
+    {
+      margin-bottom: 30%;
+    }
+
+
+    #icon-form {
+        position: absolute;
+        box-sizing: border-box;
+        width: 40px;
+        height: 50px;
+        margin-left: 70%;
+        cursor: pointer;
+        transition: all .1s linear;
+    }
+
+    #email, #senha
+    {
+      background-color: #074787;
+      color: #fff;
+    }
+
+    #email::-webkit-input-placeholder, #senha::-webkit-input-placeholder
+    {
+      color: #fff;
+    }
+
+    #icon-form:hover span {
+        transition: all .1s linear;
+        background-color: #c1c1c1;
+    }
+
+    #icon-form span {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        height: 5px;
+        background: #fff;
+        border-radius: 3px;
+    }
+
+    #icon-form .ln-1 {
+        margin-top: 20px;
+    }
+
+    #icon-form .ln-2 {
+        margin-top: 35px;
+    }
+
+    #icon-form .ln-3 {
+        margin-top: 50px;
+    }
+
+    #powered {
+        font-family: 'Roboto Regular';
+        position: absolute;
+        bottom: 5%;
+        margin-left: 23%;
+    }
+
+    #powered p { font-size: 12pt; }
+
+    #logo-form {
+        width: 50%;
+        margin-top: 5%;
+    }
+
+    #bartop {
+        background-color: #074787;
+        z-index: 4;
+    }
+
+    #user-icon {
+        position: fixed ;
+        left: 97%;
+        top: 1.9%;
+        color: #fff;
+        cursor: pointer;
+        z-index: 7;
+    }
+
+    #menutop-logo {
+        position: absolute;
+        width: 6%;
+        margin-left: 46%;
+    }
+
+    #conteudo {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        top: 7%;
+        padding-bottom: 20%;
+        background-color: #676767;
+        z-index: -5;
+        padding: 1%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #versao-menu
+    {
+        position: absolute;
+        right: 5%;
+        top: 30%;
+        cursor: pointer;
+    }
+
+    #versao-menu:hover h6 span
+    {
+      background-color: #fff;
+      color: #074787;
+    }
+
+    #versao-menu h6
+    {
+        font-size: 9pt;
+    }
+
+    #versao-menu h6 span
+    {
+        padding: 5px;
+        color: #074787;
+    }
+
+    #rodape {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        height: 10%;
+        background-color: #fff;
+        bottom: -10%;
+    }
+
+    #logo-rodape-menu-principal {
+        width: 40%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    #logo-usermenu
+    {
+        width: 60%;
+        padding-left: 10%;
+        margin-top: 10%;
+    }
+
+    #user-menu
+    {
+        position: absolute;
+        box-sizing: border-box;
+        width: 15%;
+        height: 100%;
+        background-color: #074787;
+        right: -20%;
+        top: 0;
+        z-index: 4;
+    }
+
+    #user-menu .boasvindas
+    {
+      position: absolute;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    #user-menu .boasvindas .nome, #user-menu .boasvindas .acoes
+    {
+      box-sizing: border-box;
+      width: 100%;
+      height: 50%;
+      background-color: transparent;
+      color: #fff;
+      text-align: center;
+    }
+
+    #user-menu .boasvindas .nome
+    {
+      padding-top: 14px;
+      font-size: 100%;
+      font-weight: bold;
+    }
+
+    #user-menu .boasvindas .acoes .nivel
+    {
+      position: absolute;
+      background-color: transparent;
+      color: rgba(255,255,255, .3);
+      width: 100%;
+      height: 50%;
+      text-align: center;
+      padding-top: 15px;
+      border-radius: 2px;
+      text-transform: capitalize;
+    }
+
+    #user-menu .boasvindas .acoes .perfil  { margin-left: 50%; }
+
+    #user-menu ul
+    {
+      margin-top: 65%;
+    }
+
+    #user-menu ul a { text-decoration: none; }
+
+    #user-menu ul a li {
+        list-style: none;
+        padding: 20px;
+        color: #fff;
+        background-color: #074787;
+    }
+
+    #user-menu ul a li p { float: right; }
+
+    #user-menu #sair
+    {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    #user-menu #sair li
+    {
+      background-color: #074787;
+      color: #fff;
+    }
+
+    #user-menu ul a li:hover
+    {
+        background-color: #fff;
+        color: #074787;
+        /* border-radius: 5px 0px 0px 5px;
+        margin-left: -5%;
+        box-shadow: 0 0 10px 1px #444; */
+    }
+
+    #user-menu #sair:hover li
+    {
+        background-color: red;
+        color: #fff;
+    }
+
+    #btnCadUser
+    {
+      position: absolute;
+      right: 2%;
+    }
+
+    #btnInativeUser
+    {
+      position: absolute;
+      right: 12%;
+    }
+
+    #badge-admin
+    {
+        position: absolute;
+        right: 13%;
+        top: 24.5%;
+    }
+
+
+    #logo-sys-dash {
+        box-sizing: border-box;
+        width: 10%;
+        height: auto;
+    }
+
+    #btn-editar-perfil, #btn-cancel-ed-prf, #btn-salvar-perfil
+    {
+        margin-top: 13%;
+    }
+
+    #update-pass-confirm, #perfil-senhas, #btn-cancel-ed-prf, #alerta-antecipado, #btn-salvar-perfil
+    {
+        display: none;
+    }
+
+    #form-relatorios .step-1 { display: ; }
+    #form-relatorios .step-2 { display: none; }
+    #form-relatorios .step-3 { display: none; }
+    #form-relatorios .step-4 { display: none; }
+    #form-relatorios .step-5 { display: none; }
+
+    #bg-notify
+    {
+      position: absolute;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      background-color: rgba(0,0,0, .9);
+      z-index: 99;
+      display: none;
+    }
+
+    #notify
+    {
+      position: fixed;
+      box-sizing: border-box;
+      width: 30%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 101;
+      top: 0;
+      left: -30%;
+    }
+
+    #notify .notify-header
+    {
+      position: absolute;
+      box-sizing: border-box;
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      text-align: center;
+      z-index: 4;
+      background-color: #074787;
+      color: #fff;
+    }
+
+    #notify .notify-body
+    {
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 2;
+      padding-top: 20%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    #btn-notify
+    {
+      position: absolute;
+      box-sizing: border-box;
+      width: 48px;
+      height: 48px;
+      padding-left: 13px;
+      padding-top: 12px;
+      border-radius: 100%;
+      background-color: #fff;
+      color: #074787;
+      bottom: 3.5%;
+      left: 2%;
+      z-index: 100;
+      opacity: .7;
+      cursor: pointer;
+    }
+
+    #btn-notify span
+    {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: none;
+    }
+
+    #btn-notify:hover
+    {
+      opacity: 1;
+      box-shadow: 0 0 10px 1px #333;
+      background-color: #074787;
+      color: #fff;
+    }
+
+    #controle-notify
+    {
+      position: absolute;
+      box-sizing: border-box;
+      width: 5%;
+      height: 14%;
+      top: 43%;
+      z-index: 101;
+    }
+
+    #notify .subtitle
+    {
+      margin-top: 100%;
+      font-size: 10pt;
+      color: #888;
+    }
+
+    #notify_logo
+    {
+      position: absolute;
+      box-sizing: border-box;
+      width: 35%;
+      opacity: .3;
+      left: 32.5%;
+      top: 40%;
+    }
+
+    #notify .notify-contents
+    {
+      position: absolute;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    #bg-notify .legenda
+    {
+      position: absolute;
+      box-sizing: border-box;
+      width: 20%;
+      height: auto;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #fff;
+      left: 54.5%;
+      top: 25%;
+    }
+
+    #bg-notify .legenda .form-row
+    {
+      box-sizing: border-box;
+      width: 100%;
+      height: auto;
+      padding: 5px;
+      border: 1px solid #c1c1c1;
+      margin-top: 25px;
+      margin-left: 1px;
+      margin-bottom: 25px;
+      border-radius: 5px;
+    }
+
+    #bg-notify .legenda .col-12 h4
+    {
+      box-sizing: border-box;
+      width: 100%;
+      height: auto;
+      padding-left: 10px;
+      border-left: 4px solid #074787;
+    }
+
+    #bg-notify .legenda .form-row label
+    {
+      box-sizing: border-box;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      padding-top: 3px;
+    }
+
+    #resultadoEstoque
+    {
+      display: none;
+    }
+
+}
+
+/*PARA DISPOSITIVOS COM 1500 PIXEIS OU MAIS (DESKTOPS E TELEVISORES) */
+@media only screen and (min-width: 1500px) {
+
+      * {
+          font-size: 10pt;
+      }
+
+      #loader
+      {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        z-index: 1000;
+        background-color: #074787;
+        display: block;
+      }
+
+      #loader img
+      {
+        margin-top: 5%;
+        width: 28%;
+      }
+
+      #loader h4
+      {
+        margin-top: 5%;
+        color: #fff;
+      }
+
+      #conteudo div .card, #conteudo .card { padding: 1%; }
+
+      #btn-searchprod svg
+      {
+        width: 10px;
+        height: 20px;
+      }
+
+      .banner {
+          background-color: #074787;
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+      }
+
+      #logo_login {
+          position: absolute;
+          width: 40%;
+          top: 25%;
+          margin-left: 18%;
+          display: none;
+      }
+
+      .login_home .login_form {
+          font-family: 'Roboto Thin';
+          position: absolute;
+          box-sizing: border-box;
+          width: 25%;
+          height: 100%;
+          background: #fff;
+          margin-left: 75%;
+      }
+
+      .login_home .login_form h4 {
+          font-family: 'Roboto Regular';
+          margin-top: 40%;
+      }
+
+      #form-login
+      {
+        margin-top: 15%;
+      }
+
+      #form-login .footer
+      {
+        margin-bottom: 30%;
+      }
+
+      #icon-form {
+          position: absolute;
+          box-sizing: border-box;
+          width: 40px;
+          height: 50px;
+          margin-left: 70%;
+          cursor: pointer;
+          transition: all .1s linear;
+      }
+
+      #email, #senha
+      {
+        background-color: #074787;
+        color: #fff;
+      }
+
+      #email::-webkit-input-placeholder, #senha::-webkit-input-placeholder
+      {
+        color: #fff;
+      }
+
+      #icon-form:hover span {
+          transition: all .1s linear;
+          background-color: #c1c1c1;
+      }
+
+      #icon-form span {
+          position: absolute;
+          box-sizing: border-box;
+          width: 100%;
+          height: 5px;
+          background: #fff;
+          border-radius: 3px;
+      }
+
+      #icon-form .ln-1 {
+          margin-top: 20px;
+      }
+
+      #icon-form .ln-2 {
+          margin-top: 35px;
+      }
+
+      #icon-form .ln-3 {
+          margin-top: 50px;
+      }
+
+      #powered {
+          font-family: 'Roboto Regular';
+          position: absolute;
+          bottom: 5%;
+          margin-left: 25%;
+      }
+
+      #powered p { font-size: 12pt; }
+
+      #logo-form {
+          width: 50%;
+          margin-top: 5%;
+      }
+
+      #bartop {
+          background-color: #074787;
+          z-index: 4;
+      }
+
+      #user-icon {
+          position: fixed ;
+          left: 97%;
+          top: 1.9%;
+          color: #fff;
+          cursor: pointer;
+          z-index: 7;
+      }
+
+      #menutop-logo {
+          position: absolute;
+          width: 5%;
+          margin-left: 46%;
+      }
+
+      #conteudo {
+          position: absolute;
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          top: 6.5%;
+          padding-bottom: 20%;
+          background-color: #676767;
+          z-index: -5;
+          padding: 1%;
+          overflow-x: hidden;
+          overflow-y: auto;
+      }
+
+      #versao-menu
+      {
+          position: absolute;
+          right: 5%;
+          top: 30%;
+          cursor: pointer;
+      }
+
+      #versao-menu:hover h6 span
+      {
+        background-color: #fff;
+        color: #074787;
+      }
+
+      #versao-menu h6
+      {
+          font-size: 9pt;
+      }
+
+      #versao-menu h6 span
+      {
+          padding: 5px;
+          color: #074787;
+      }
+
+      #rodape {
+          position: absolute;
+          box-sizing: border-box;
+          width: 100%;
+          height: 10%;
+          background-color: #fff;
+          bottom: -10%;
+      }
+
+      #logo-rodape-menu-principal {
+          width: 40%;
+          margin-top: 10%;
+          margin-bottom: 10%;
+      }
+
+      #logo-usermenu
+      {
+          width: 60%;
+          padding-left: 10%;
+          margin-top: 10%;
+      }
+
+      #user-menu
+      {
+          position: absolute;
+          box-sizing: border-box;
+          width: 15%;
+          height: 100%;
+          background-color: #074787;
+          right: -20%;
+          top: 0;
+          z-index: 4;
+      }
+
+      #user-menu .boasvindas
+      {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #000;
+      }
+
+      #user-menu .boasvindas .nome, #user-menu .boasvindas .acoes
+      {
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+        background-color: transparent;
+        color: #fff;
+        text-align: center;
+      }
+
+      #user-menu .boasvindas .nome
+      {
+        padding-top: 14px;
+        font-size: 100%;
+        font-weight: bold;
+      }
+
+      #user-menu .boasvindas .acoes .nivel
+      {
+        position: absolute;
+        background-color: transparent;
+        color: rgba(255,255,255, .3);
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        padding-top: 15px;
+        border-radius: 2px;
+        text-transform: capitalize;
+      }
+
+      #user-menu .boasvindas .acoes .perfil  { margin-left: 50%; }
+
+      #user-menu ul
+      {
+        margin-top: 65%;
+      }
+
+      #user-menu ul a { text-decoration: none; }
+
+      #user-menu ul a li {
+          list-style: none;
+          padding: 20px;
+          color: #fff;
+          background-color: #074787;
+      }
+
+      #user-menu ul a li p { float: right; }
+
+      #user-menu #sair
+      {
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+      }
+      #user-menu #sair li
+      {
+        background-color: #074787;
+        color: #fff;
+      }
+
+      #user-menu ul a li:hover
+      {
+          background-color: #fff;
+          color: #074787;
+          /* border-radius: 5px 0px 0px 5px;
+          margin-left: -5%;
+          box-shadow: 0 0 10px 1px #444; */
+      }
+
+      #user-menu #sair:hover li
+      {
+          background-color: red;
+          color: #fff;
+      }
+
+      #btnCadUser
+      {
+        position: absolute;
+        right: 2%;
+      }
+
+      #btnInativeUser
+      {
+        position: absolute;
+        right: 12%;
+      }
+
+      #badge-admin
+      {
+          position: absolute;
+          right: 13%;
+          top: 24.5%;
+      }
+
+
+      #logo-sys-dash {
+          box-sizing: border-box;
+          width: 10%;
+          height: auto;
+      }
+
+      #btn-editar-perfil, #btn-cancel-ed-prf, #btn-salvar-perfil
+      {
+          margin-top: 13%;
+      }
+
+      #update-pass-confirm, #perfil-senhas, #btn-cancel-ed-prf, #alerta-antecipado, #btn-salvar-perfil
+      {
+          display: none;
+      }
+
+      #form-relatorios .step-1 { display: ; }
+      #form-relatorios .step-2 { display: none; }
+      #form-relatorios .step-3 { display: none; }
+      #form-relatorios .step-4 { display: none; }
+      #form-relatorios .step-5 { display: none; }
+
+      #bg-notify
+      {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: rgba(0,0,0, .9);
+        z-index: 99;
+        display: none;
+      }
+
+      #notify
+      {
+        position: fixed;
+        box-sizing: border-box;
+        width: 30%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 101;
+        top: 0;
+        left: -30%;
+      }
+
+      #notify .notify-header
+      {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px solid #333;
+        z-index: 4;
+        background-color: #074787;
+        color: #fff;
+      }
+
+      #notify .notify-body
+      {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 2;
+        padding-top: 20%;
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+      #btn-notify
+      {
+        position: absolute;
+        box-sizing: border-box;
+        width: 48px;
+        height: 48px;
+        padding-left: 13px;
+        padding-top: 12px;
+        border-radius: 100%;
+        background-color: #fff;
+        color: #074787;
+        bottom: 3.5%;
+        left: 2%;
+        z-index: 100;
+        opacity: .7;
+        cursor: pointer;
+      }
+
+      #btn-notify:hover
+      {
+        opacity: 1;
+        box-shadow: 0 0 10px 1px #333;
+        background-color: #074787;
+        color: #fff;
+      }
+
+      #controle-notify
+      {
+        position: absolute;
+        box-sizing: border-box;
+        width: 5%;
+        height: 14%;
+        top: 43%;
+        z-index: 101;
+      }
+
+      #notify .subtitle
+      {
+        margin-top: 100%;
+        font-size: 10pt;
+        color: #888;
+      }
+
+      #notify_logo
+      {
+        position: absolute;
+        box-sizing: border-box;
+        width: 35%;
+        opacity: .3;
+        left: 32.5%;
+        top: 40%;
+      }
+
+      #notify .notify-contents
+      {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        padding: 20px;
+        background-color: #fff;
+      }
+
+}
+
+/* CSS P/ DISPOSITIVOS COM 2000 PIXEIS OU MAIS (DESKTOPS, TELEVISORES E TELAS WIDESCREEN)*/
+@media only screen and (min-width: 2000px) {
+
+      * {
+          font-size: 10pt;
+      }
+
+      #loader
+      {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        z-index: 1000;
+        background-color: #074787;
+        display: block;
+      }
+
+      #loader img
+      {
+        margin-top: 5%;
+        width: 28%;
+      }
+
+      #loader h4
+      {
+        margin-top: 5%;
+        color: #fff;
+      }
+
+      #conteudo div .card, #conteudo .card { padding: 1%; }
+
+      #btn-searchprod svg
+      {
+        width: 10px;
+        height: 20px;
+      }
+
+      .banner {
+          background-color: #074787;
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+      }
+
+      #logo_login {
+          position: absolute;
+          width: 35%;
+          top: 20%;
+          margin-left: 20%;
+          display: none;
+      }
+
+      .login_home .login_form {
+          font-family: 'Roboto Thin';
+          position: absolute;
+          box-sizing: border-box;
+          width: 25%;
+          height: 100%;
+          background: #fff;
+          margin-left: 75%;
+      }
+
+      #form-login
+      {
+        margin-top: 15%;
+        height: auto;
+      }
+
+      #form-login .footer
+      {
+        position: absolute;
+        bottom: -10%;
+        left: 0;
+        width: 100%;
+      }
+
+
+      .login_home .login_form h4 {
+          font-family: 'Roboto Regular';
+          margin-top: 20%;
+      }
+
+      #icon-form {
+          position: absolute;
+          box-sizing: border-box;
+          width: 40px;
+          height: 50px;
+          margin-left: 72.5%;
+          cursor: pointer;
+          transition: all .1s linear;
+      }
+
+      #email, #senha
+      {
+        background-color: #074787;
+        color: #fff;
+      }
+
+      #email::-webkit-input-placeholder, #senha::-webkit-input-placeholder
+      {
+        color: #fff;
+      }
+
+      #icon-form:hover span {
+          transition: all .1s linear;
+          background-color: #c1c1c1;
+      }
+
+      #icon-form span {
+          position: absolute;
+          box-sizing: border-box;
+          width: 100%;
+          height: 5px;
+          background: #fff;
+          border-radius: 3px;
+      }
+
+      #icon-form .ln-1 {
+          margin-top: 20px;
+      }
+
+      #icon-form .ln-2 {
+          margin-top: 35px;
+      }
+
+      #icon-form .ln-3 {
+          margin-top: 50px;
+      }
+
+      #powered {
+          font-family: 'Roboto Regular';
+          position: absolute;
+          bottom: 5%;
+          margin-left: 30%;
+      }
+
+      #powered p { font-size: 12pt; }
+
+      #logo-form {
+          width: 50%;
+          margin-top: 5%;
+      }
+
+      #bartop {
+          background-color: #074787;
+          z-index: 4;
+      }
+
+      #user-icon {
+          position: fixed;
+          left: 97%;
+          top: 1.5%;
+          color: #fff;
+          cursor: pointer;
+          z-index: 7;
+      }
+
+      #menutop-logo {
+          position: absolute;
+          width: 3.5%;
+          margin-left: 48%;
+      }
+
+      #conteudo {
+          position: absolute;
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          top: 5.1%;
+          padding-bottom: 20%;
+          background-color: #676767;
+          z-index: -5;
+          padding: 1%;
+          overflow-x: hidden;
+          overflow-y: auto;
+      }
+
+      #versao-menu
+      {
+          position: absolute;
+          right: 4%;
+          top: 30%;
+          cursor: pointer;
+      }
+
+      #versao-menu:hover h6 span
+      {
+        background-color: #fff;
+        color: #074787;
+      }
+
+      #versao-menu h6
+      {
+          font-size: 9pt;
+      }
+
+      #versao-menu h6 span
+      {
+          padding: 5px;
+          color: #074787;
+      }
+
+      #rodape {
+          position: absolute;
+          box-sizing: border-box;
+          width: 100%;
+          height: 10%;
+          background-color: #fff;
+          bottom: -10%;
+      }
+
+      #logo-rodape-menu-principal {
+          width: 40%;
+          margin-top: 10%;
+          margin-bottom: 10%;
+      }
+
+      #logo-usermenu
+      {
+          width: 60%;
+          padding-left: 10%;
+          margin-top: 10%;
+      }
+
+      #user-menu
+      {
+          position: absolute;
+          box-sizing: border-box;
+          width: 15%;
+          height: 100%;
+          background-color: #074787;
+          right: -20%;
+          top: 0;
+          z-index: 4;
+      }
+
+      #user-menu .boasvindas
+      {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #000;
+      }
+
+      #user-menu .boasvindas .nome, #user-menu .boasvindas .acoes
+      {
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+        background-color: transparent;
+        color: #fff;
+        text-align: center;
+      }
+
+      #user-menu .boasvindas .nome
+      {
+        padding-top: 14px;
+        font-size: 100%;
+        font-weight: bold;
+      }
+
+      #user-menu .boasvindas .acoes .nivel
+      {
+        position: absolute;
+        background-color: transparent;
+        color: rgba(255,255,255, .3);
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        padding-top: 15px;
+        border-radius: 2px;
+        text-transform: capitalize;
+      }
+
+      #user-menu .boasvindas .acoes .perfil  { margin-left: 50%; }
+
+      #user-menu ul
+      {
+        margin-top: 65%;
+      }
+
+      #user-menu ul a { text-decoration: none; }
+
+      #user-menu ul a li {
+          list-style: none;
+          padding: 20px;
+          color: #fff;
+          background-color: #074787;
+      }
+
+      #user-menu ul a li p { float: right; }
+
+      #user-menu #sair
+      {
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+      }
+      #user-menu #sair li
+      {
+        background-color: #074787;
+        color: #fff;
+      }
+
+      #user-menu ul a li:hover
+      {
+          background-color: #fff;
+          color: #074787;
+          /* border-radius: 5px 0px 0px 5px;
+          margin-left: -5%;
+          box-shadow: 0 0 10px 1px #444; */
+      }
+
+      #user-menu #sair:hover li
+      {
+          background-color: red;
+          color: #fff;
+      }
+
+      #btnCadUser
+      {
+        position: absolute;
+        right: 2%;
+      }
+
+      #btnInativeUser
+      {
+        position: absolute;
+        right: 8%;
+      }
+
+      #badge-admin
+      {
+          position: absolute;
+          right: 9%;
+          top: 26%;
+      }
+
+
+      #logo-sys-dash {
+          box-sizing: border-box;
+          width: 10%;
+          height: auto;
+      }
+
+      #btn-editar-perfil, #btn-cancel-ed-prf, #btn-salvar-perfil
+      {
+          margin-top: 13%;
+      }
+
+      #update-pass-confirm, #perfil-senhas, #btn-cancel-ed-prf, #alerta-antecipado, #btn-salvar-perfil
+      {
+          display: none;
+      }
+
+      #form-relatorios .step-1 { display: ; }
+      #form-relatorios .step-2 { display: none; }
+      #form-relatorios .step-3 { display: none; }
+      #form-relatorios .step-4 { display: none; }
+      #form-relatorios .step-5 { display: none; }
+
+      #bg-notify
+      {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: rgba(0,0,0, .9);
+        z-index: 99;
+        display: none;
+      }
+
+      #notify
+      {
+        position: fixed;
+        box-sizing: border-box;
+        width: 30%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 101;
+        top: 0;
+        left: -30%;
+      }
+
+      #notify .notify-header
+      {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        padding-top: 25px;
+        padding-left: 20px;
+        text-align: center;
+        border-bottom: 2px solid #333;
+        z-index: 4;
+        background-color: #074787;
+        color: #fff;
+      }
+
+      #notify .notify-body
+      {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 2;
+        padding-top: 20%;
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+      #btn-notify
+      {
+        position: absolute;
+        box-sizing: border-box;
+        width: 48px;
+        height: 48px;
+        padding-left: 13px;
+        padding-top: 12px;
+        border-radius: 100%;
+        background-color: #fff;
+        color: #074787;
+        bottom: 3.5%;
+        left: 2%;
+        z-index: 100;
+        opacity: .7;
+        cursor: pointer;
+      }
+
+      #btn-notify:hover
+      {
+        opacity: 1;
+        box-shadow: 0 0 10px 1px #333;
+        background-color: #074787;
+        color: #fff;
+      }
+
+      #controle-notify
+      {
+        position: absolute;
+        box-sizing: border-box;
+        width: 5%;
+        height: 14%;
+        top: 43%;
+        z-index: 101;
+      }
+
+      #notify .subtitle
+      {
+        margin-top: 80%;
+        font-size: 10pt;
+        color: #888;
+      }
+
+      #notify_logo
+      {
+        position: absolute;
+        box-sizing: border-box;
+        width: 30%;
+        opacity: .3;
+        left: 35%;
+        top: 40%;
+      }
+
+      #notify .notify-contents
+      {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        padding: 20px;
+        background-color: #fff;
+      }
+
+}

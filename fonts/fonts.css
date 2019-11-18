@@ -1,0 +1,44 @@
+/*
+
+  CENTRO PAULA SOUZA
+  ESCOLA TÉCNICA ESTADUAL DE EMBU - EMBU DAS ARTES/SP
+  TÉCNICO EM INFORMÁTICA
+
+  GRUPO IWG WEB SOFTWARE
+  MECHAWORK - ADMINISTRAÇÃO DE OFICINA MECÂNICA
+
+  INTEGRANTES:
+  - Douglas Menezes Evangelista da Silva
+  - Lucas Eduardo Rodrigues Cardoso
+  - Lucas Henrique de Moraes
+  - Matheus Basilio Cintra
+  - Renata Araujo Nascimento
+  - Vinicius Arruda
+
+  FOLHA DE DEFINIÇÃO DAS FONTES - FONTFACE
+
+*/
+
+/* ROBOTO REGULAR */
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('./roboto/Roboto-Regular-webfont.ttf');
+}
+
+/* ROBOTO Italic */
+@font-face {
+  font-family: 'Roboto Italic';
+  src: url('./roboto/Roboto-Italic-webfont.ttf');
+}
+
+/* ROBOTO REGULAR */
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('./roboto/Roboto-Bold-webfont.ttf');
+}
+
+/* ROBOTO REGULAR */
+@font-face {
+  font-family: 'Roboto Thin';
+  src: url('./roboto/Roboto-Thin-webfont.ttf');
+}
