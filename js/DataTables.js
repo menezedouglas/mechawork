@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  var base_url = 'https://www.mechawork.ml';
+  var base_url = 'http://189.1.163.64/mechawork';
 
   $.ajax({
     url: base_url + '/sistema/geturlbase',

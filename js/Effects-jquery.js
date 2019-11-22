@@ -42,7 +42,7 @@ $(document).ready(function(){
 
 	var checkTodos = $("#marcartodos");
 
-	var base_url = 'http://localhost/mechawork';
+	var base_url = 'http://189.1.163.64/mechawork';
 
 	$.ajax({
 		url: base_url + '/sistema/geturlbase',

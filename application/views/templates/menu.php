@@ -184,7 +184,7 @@
             <div class="form-group col-12">
               <label>Tipo de Frota<span class="text-danger">*</span></label>
               <select class="custom-select" name="tipo_frota">
-                <option value="">TODOS</option>
+                <option value="TODOS">TODOS</option>
                 <option value="MÁQUINAS DE CARGA E ELEVAÇÃO">MÁQUINAS DE CARGA E ELEVAÇÃO</option>
                 <option value="VEÍCULOS DE CARGA E ELEVAÇÃO">VEÍCULOS DE CARGA E ELEVAÇÃO</option>
                 <option value="VEÍCULOS DE TRANSPORTES DE PASSAGEIROS">VEÍCULOS DE TRANSPORTES DE PASSAGEIROS</option>
