@@ -2,6 +2,7 @@
 <hr>
 <h3>Dados do projeto</h3>
 <h5>Tipo: Trabalho de Conclusão de Curso</h5> 
+<h5>Curso: Técnico em Informática</h5> 
 <h5>Instituição: Escola Técnica Estadual de Embu - Embu das Artes - SP</h5> 
 <h5>Integrantes: Douglas Menezes, Lucas Eduardo, Lucas Henrique, Matheus Basílio, Vinicius Arruda & Renata Araujo</h5> 
 <h5>Coordenadores: Professores Marcos Costa & Aline</h5>
