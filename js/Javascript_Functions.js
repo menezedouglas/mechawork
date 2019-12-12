@@ -1,6 +1,6 @@
 var gastos_por_area = document.getElementById("gastos_por_area").getContext('2d');
 var gastos_por_mes = document.getElementById("gastos_por_mes").getContext('2d');
-var base_url = 'http://189.1.163.64/mechawork';
+var base_url = 'http://localhost/mechawork';
 
 $(document).ready(function(){
 

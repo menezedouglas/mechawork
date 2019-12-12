@@ -8,7 +8,7 @@ $(function(){
 
   /* DECLARAÇÃO DE VARIÁVEIS */
 
-  var base_url = 'http://189.1.163.64/mechawork';
+  var base_url = 'http://localhost/mechawork';
 
   var counterms = setInterval('validaSessao()', 6000);
 

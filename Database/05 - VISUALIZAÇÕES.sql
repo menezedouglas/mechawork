@@ -2,18 +2,18 @@ use mecha;
 
 drop view if exists vw_nota;
 create view vw_nota as
-select sum(valor) valor_compras,month(data_compra) mes_compras,year(data_compra) ano_compras from tbl_nota_compra 
-where  year(data_compra)=year(now()) and estatus = 1 group  by month(data_compra);
+select sum(valor) valor_compras,month(data_compra) mes_compras,year(data_compra) ano_compras from tbl_nota_compra n
+where year(data_compra)=year(now()) and estatus = 1 group by month(n.data_compra);
 
 drop view if exists vw_custo_interno;
 create view vw_custo_interno as
-select sum(custo_interno) gasto_interno ,month(hora_iniciada) mes_interno, year(hora_iniciada) ano_interna from tbl_manutencao_realizada 
-where year (hora_iniciada)=year(now()) and estatus = 1 group by month(hora_iniciada);
+select sum(custo_interno) gasto_interno ,month(hora_iniciada) mes_interno, year(hora_iniciada) ano_interna from tbl_manutencao_realizada m
+where year (hora_iniciada)=year(now()) and estatus = 1 group by month(m.hora_iniciada);
 
 drop view if exists vw_custo_externo;
 create view vw_custo_externo as
-select sum(valor) gasto_externo,month(data_servico) mes_externo,year(data_servico) ano_externo from tbl_nota_servico 
-where  year(data_servico)=year(now()) and estatus = 1 group by month(data_servico);
+select sum(valor) gasto_externo,month(data_servico) mes_externo,year(data_servico) ano_externo from tbl_nota_servico n
+where year(data_servico)=year(now()) and estatus = 1 group by month(n.data_servico);
 
 drop view if exists vw_manutencao_interna;
 create view vw_manutencao_interna as
